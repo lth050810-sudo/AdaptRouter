@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptrouter-api"
+version = "0.1.0"
+description = "Table 3 StartLux API-expert router training and native routing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "torch>=2.7.1",
+  "transformers>=5.8.1,<5.9",
+  "huggingface_hub>=0.34",
+  "safetensors>=0.4",
+  "accelerate>=1.0",
+  "Pillow>=10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+cuda-kernels = ["flash-linear-attention>=0.5.2", "causal-conv1d>=1.7"]
+
+[project.scripts]
+adaptrouter-api = "adaptrouter_api.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["adaptrouter_api*"]
+
+[tool.setuptools.package-data]
+adaptrouter_api = ["_vendor/startlux/UPSTREAM.json", "_vendor/startlux/LICENSE", "_vendor/startlux/startlux_decide/*.py", "_vendor/startlux/startlux_decide/backends/*.py"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

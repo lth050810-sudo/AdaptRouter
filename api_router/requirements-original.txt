@@ -1,0 +1,5 @@
+# Versions recorded in the retained training identity.
+# Install an appropriate CUDA build of PyTorch for your machine before the package.
+torch==2.7.1
+transformers==5.8.1
+# Other dependencies are declared in pyproject.toml.

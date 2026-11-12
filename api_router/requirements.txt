@@ -1,0 +1,2 @@
+# Install from this directory. The native Instant runtime targets Transformers 5.8.x.
+-e .

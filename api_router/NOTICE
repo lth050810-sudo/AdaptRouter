@@ -1,0 +1,18 @@
+AdaptRouter API Router Training
+Copyright 2026 AdaptRouter contributors.
+
+This directory contains the retained StartLux API-router training implementation,
+ported into an independently installable Python package. Its Apache-2.0 code
+license does not relicense model weights, benchmark datasets, or API outputs.
+
+Three unchanged native inference helper files are bundled from:
+StartLux-Decision, StartLux Labs
+https://github.com/StartLuxLabs/StartLux-Decision
+commit cb1d11f1ac9e9b43b95ef3a6468fa29b607c40fd
+They retain their original Apache-2.0 license in
+src/adaptrouter_api/_vendor/startlux/LICENSE and their original source notices.
+Source-file hashes are recorded in the adjacent UPSTREAM.json.
+
+The StartLux base and the released AdaptRouter model weights retain their own
+CC BY-NC 4.0 license and upstream attribution. Download them from the respective
+Hugging Face model repositories; they are not distributed in this code archive.

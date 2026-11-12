@@ -1,0 +1,26 @@
+{
+  "scope": "Table 3 StartLux API-expert router global trainer only",
+  "original_source_sha256": {
+    "jev_router_source/jev_router/decision.py": "269588cf7a3e56398b80ec07fa0f5896b9b1f59f6018a1e71e889e38def87a70",
+    "jev_router_source/jev_router/image_io.py": "1a24a5915b189deab4cd85d2747a5b3263d8b574c8d9ba52b5482b6656e0d8f6",
+    "jev_router_source/jev_router/model_assets.py": "5764871607648224bf234640fb693b284aaf556d75195440e8783b4fdb479b00",
+    "jev_router_source/jev_router/startlux_trainable.py": "c13635ecf42d87e79816044a7de9a7b527efdfca59b126716efe0d61868dabd1",
+    "closed_router_training/reward_eval/closed_reward.py": "900b4d0bd6b354bf9c93df5819172dddca39fe0ea50f2fadaf62fe7787c9765f",
+    "closed_router_training/training/router_observation.py": "9257ba7c712b80a620ceb10727d5fcfee5f2ce4fca9cbf9c03b684c922bb5f43",
+    "closed_router_training/training/train.py": "8d4e3656fbc9a01a4f8bb775d43b58cb33304350ad0ceffe714590aadaaeb074"
+  },
+  "base_model": {
+    "id": "startlux-models/StartLux-Decision-v1.1-0.8B-Instant",
+    "revision": "6496ae641cc71b149ce9dad69bd97f2a44e7bf11"
+  },
+  "retained_global_checkpoint_sha256": "f79c6be7c863a1efc299be20e4ce2b8d15ba0203961f6bfd5324a134231324e5",
+  "portability_changes": [
+    "Package-relative imports and configurable data/model/output paths",
+    "Bundled byte-identical pinned StartLux prompt/image/bidirectional helpers with Apache-2.0 attribution",
+    "StartLux-only API training interface; unrelated router-size/image-ablation/JevAny/open-pool study interfaces removed",
+    "Loss factored into a tested function; original target, weighting, candidate shuffling and optimizer math retained",
+    "Safe tensor-only local checkpoint loads and HF release inference entry point",
+    "Python formatting, CLI help, data validation helpers and explicit paper/custom cohort guards"
+  ],
+  "availability": "Cleaned archive retains the global trainer. Benchmark-specific refit source and original full-information feedback data were not retained in this release."
+}

@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/StartLuxLabs/StartLux-Decision",
+  "revision": "cb1d11f1ac9e9b43b95ef3a6468fa29b607c40fd",
+  "license": "Apache-2.0",
+  "files": {
+    "startlux_decide/prompt.py": "22df35aed8c2241f9fc0a7aff5e4df04111f253ba520fd45ae5c73e7a6c04d1c",
+    "startlux_decide/images.py": "889d82a58ca5659c799dd1935fe996b6184d30f3d94232074c55339354bd18d0",
+    "startlux_decide/backends/bidirectional.py": "abbcb30578f74317a5a48c8040ea558ac7227727a3e576bc41e4ca4ed84aa41e"
+  }
+}

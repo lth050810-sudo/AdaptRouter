@@ -1,0 +1,9 @@
+{
+  "family": "startlux",
+  "epoch": 3,
+  "lambda_cost": 0.02,
+  "data_sha256": "8861d97f08a6eac980168a4a52e585ace987a85bd2b7eb8ae575ae8dd8740709",
+  "cost_scale": 0.04569881355151548,
+  "router_input_policy": "question_length_head_tail",
+  "selection_rule": "archived_fixed_positive_cost_recipe"
+}

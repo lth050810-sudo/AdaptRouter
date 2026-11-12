@@ -1,0 +1,2 @@
+{"dataset": "synthetic_math", "task_id": "test-train-0", "group_id": "test-synthetic_math-train", "split": "test", "question": "Synthetic example: choose an expert to answer 2 + 2.", "routing_question": "", "document_char_count": null, "images": [], "is_synthetic_example": true}
+{"dataset": "synthetic_text", "task_id": "test-train-1", "group_id": "test-synthetic_text-train", "split": "test", "question": "Synthetic example: summarize a short paragraph.", "routing_question": "", "document_char_count": null, "images": [], "is_synthetic_example": true}

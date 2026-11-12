@@ -1,0 +1,28 @@
+{
+  "epochs": 3,
+  "lambda_grid": [
+    0.02
+  ],
+  "seed": 37,
+  "max_input_tokens": 8192,
+  "learning_rate": 1e-06,
+  "questions_per_update": 16,
+  "temperature": 0.05,
+  "cost_scale": 0.04569881355151548,
+  "training_tasks": 1328,
+  "dataset_count": 10,
+  "router_input_policy": "question_length_head_tail",
+  "router_text_token_budget": 4096,
+  "router_image_policy": "deduplicate_sha_then_all_up_to_16_else_evenly_spaced_originals",
+  "torch_version": "2.7.1+cu128",
+  "transformers_version": "5.8.1",
+  "regret_coefficient": 0.1,
+  "weight_decay": 0.01,
+  "gradient_clip_norm": 1.0,
+  "optimizer": "AdamW",
+  "parameter_dtype": "float32",
+  "cuda_forward_autocast": "bfloat16",
+  "global_optimizer_updates": 249,
+  "source_data_sha256": "8861d97f08a6eac980168a4a52e585ace987a85bd2b7eb8ae575ae8dd8740709",
+  "note": "Historical fixed-recipe metadata. Training feedback and benchmark-specific refit artifacts are not included."
+}
